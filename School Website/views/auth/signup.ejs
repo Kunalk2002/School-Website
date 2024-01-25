@@ -1,0 +1,31 @@
+<%-  include('../include/head.ejs') %>
+<link rel="stylesheet" href="/css/form.css">
+</head>
+<body> 
+    <%-  include('../include/navigation.ejs') %>
+            <div class="login-form">
+                <form action="/signup">
+                    <label for="fname">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Enter Your Email">
+                    
+                    <label for="password">Password</label>
+                    <input type="text" id="password" name="password" placeholder="Enter Your Password">
+                    
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="text" id="confirmPassword" name="confirmPassword" placeholder="Enter Your Password">
+                    
+                    <label for="userType">Select User Type (Student/College Staff)</label>
+                    <select id="userType" name="userType" placeholder="Select">
+                        <option value="" disabled selected>Select Your Option</option>
+                        <option value="student">Student</option>
+                        <option value="admin">College Staff</option>
+                    </select>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+<!--Javascript is Start-->
+<script src="/js/main_script.js"></script>
+</body>
+</html>
